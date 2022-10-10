@@ -54,14 +54,38 @@
 		65324DD228F40113006A770E /* Image Hiscord */ = {
 			isa = PBXGroup;
 			children = (
-				65324DD328F40113006A770E /* AppDelegate.swift */,
-				65324DD528F40113006A770E /* SceneDelegate.swift */,
-				65324DD728F40113006A770E /* ViewController.swift */,
+				65324DE728F403DC006A770E /* Resource */,
+				65324DE828F403E0006A770E /* Source */,
+			);
+			path = "Image Hiscord";
+			sourceTree = "<group>";
+		};
+		65324DE728F403DC006A770E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
 				65324DDC28F40115006A770E /* Assets.xcassets */,
 				65324DDE28F40115006A770E /* LaunchScreen.storyboard */,
 				65324DE128F40115006A770E /* Info.plist */,
 			);
-			path = "Image Hiscord";
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		65324DE828F403E0006A770E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				65324DD728F40113006A770E /* ViewController.swift */,
+				65324DE928F40418006A770E /* LifeCycle */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		65324DE928F40418006A770E /* LifeCycle */ = {
+			isa = PBXGroup;
+			children = (
+				65324DD328F40113006A770E /* AppDelegate.swift */,
+				65324DD528F40113006A770E /* SceneDelegate.swift */,
+			);
+			path = LifeCycle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,7 +301,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P7PUGAUP8K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Image Hiscord/Info.plist";
+				INFOPLIST_FILE = "Image Hiscord/Resource/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -305,7 +329,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P7PUGAUP8K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Image Hiscord/Info.plist";
+				INFOPLIST_FILE = "Image Hiscord/Resource/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
