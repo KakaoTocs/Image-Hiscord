@@ -11,6 +11,7 @@
 		65324DD628F40113006A770E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65324DD528F40113006A770E /* SceneDelegate.swift */; };
 		65324DDD28F40115006A770E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65324DDC28F40115006A770E /* Assets.xcassets */; };
 		65324DE028F40115006A770E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65324DDE28F40115006A770E /* LaunchScreen.storyboard */; };
+		659D95B128F5292E000030EA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659D95B028F5292E000030EA /* HomeViewController.swift */; };
 		659D95B428F5295D000030EA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 659D95B328F5295D000030EA /* SnapKit */; };
 		659D95B728F52987000030EA /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 659D95B628F52987000030EA /* Then */; };
 		659D95BA28F529BC000030EA /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 659D95B928F529BC000030EA /* RxCocoa */; };
@@ -25,6 +26,7 @@
 		65324DDC28F40115006A770E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65324DDF28F40115006A770E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65324DE128F40115006A770E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		659D95B028F5292E000030EA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				65324DE928F40418006A770E /* LifeCycle */,
+				65324DEB28F40536006A770E /* Home */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -93,6 +96,14 @@
 				65324DD528F40113006A770E /* SceneDelegate.swift */,
 			);
 			path = LifeCycle;
+			sourceTree = "<group>";
+		};
+		65324DEB28F40536006A770E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				659D95B028F5292E000030EA /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +190,7 @@
 			files = (
 				65324DD428F40113006A770E /* AppDelegate.swift in Sources */,
 				65324DD628F40113006A770E /* SceneDelegate.swift in Sources */,
+				659D95B128F5292E000030EA /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
