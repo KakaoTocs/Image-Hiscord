@@ -18,6 +18,7 @@
 		659D95BA28F529BC000030EA /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 659D95B928F529BC000030EA /* RxCocoa */; };
 		659D95BC28F529BC000030EA /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 659D95BB28F529BC000030EA /* RxRelay */; };
 		659D95BE28F529BC000030EA /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 659D95BD28F529BC000030EA /* RxSwift */; };
+		659D95C028F529F1000030EA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659D95BF28F529F1000030EA /* HomeViewModel.swift */; };
 		659D95C228F52AEC000030EA /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659D95C128F52AEC000030EA /* ViewModelProtocol.swift */; };
 		659D95C528F5317B000030EA /* ImageWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659D95C428F5317B000030EA /* ImageWorker.swift */; };
 		659D95C828F532D6000030EA /* ImageMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659D95C728F532D6000030EA /* ImageMeta.swift */; };
@@ -32,6 +33,7 @@
 		65324DDF28F40115006A770E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65324DE128F40115006A770E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		659D95B028F5292E000030EA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		659D95BF28F529F1000030EA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		659D95C128F52AEC000030EA /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		659D95C428F5317B000030EA /* ImageWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWorker.swift; sourceTree = "<group>"; };
 		659D95C728F532D6000030EA /* ImageMeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMeta.swift; sourceTree = "<group>"; };
@@ -94,7 +96,9 @@
 				659D95C628F532CA000030EA /* Model */,
 				659D95C328F53157000030EA /* Service */,
 				65324DE928F40418006A770E /* LifeCycle */,
+				65324DEA28F40531006A770E /* Root */,
 				65324DEB28F40536006A770E /* Home */,
+				65324DEC28F40545006A770E /* Detail */,
 				659D95C128F52AEC000030EA /* ViewModelProtocol.swift */,
 			);
 			path = Source;
@@ -109,12 +113,27 @@
 			path = LifeCycle;
 			sourceTree = "<group>";
 		};
+		65324DEA28F40531006A770E /* Root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
 		65324DEB28F40536006A770E /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				659D95B028F5292E000030EA /* HomeViewController.swift */,
+				659D95BF28F529F1000030EA /* HomeViewModel.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		65324DEC28F40545006A770E /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		659D95C328F53157000030EA /* Service */ = {
@@ -220,6 +239,7 @@
 				659D95C228F52AEC000030EA /* ViewModelProtocol.swift in Sources */,
 				6525362728F54913004C9DED /* ImageMetaDataService.swift in Sources */,
 				65324DD628F40113006A770E /* SceneDelegate.swift in Sources */,
+				659D95C028F529F1000030EA /* HomeViewModel.swift in Sources */,
 				659D95B128F5292E000030EA /* HomeViewController.swift in Sources */,
 				659D95C528F5317B000030EA /* ImageWorker.swift in Sources */,
 				659D95C828F532D6000030EA /* ImageMeta.swift in Sources */,
