@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		65324DD428F40113006A770E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65324DD328F40113006A770E /* AppDelegate.swift */; };
 		65324DD628F40113006A770E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65324DD528F40113006A770E /* SceneDelegate.swift */; };
-		65324DD828F40113006A770E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65324DD728F40113006A770E /* ViewController.swift */; };
 		65324DDD28F40115006A770E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65324DDC28F40115006A770E /* Assets.xcassets */; };
 		65324DE028F40115006A770E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65324DDE28F40115006A770E /* LaunchScreen.storyboard */; };
 		659D95B428F5295D000030EA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 659D95B328F5295D000030EA /* SnapKit */; };
@@ -23,7 +22,6 @@
 		65324DD028F40113006A770E /* Image Hiscord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Image Hiscord.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65324DD328F40113006A770E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65324DD528F40113006A770E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		65324DD728F40113006A770E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		65324DDC28F40115006A770E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65324DDF28F40115006A770E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65324DE128F40115006A770E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,7 +81,6 @@
 		65324DE828F403E0006A770E /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				65324DD728F40113006A770E /* ViewController.swift */,
 				65324DE928F40418006A770E /* LifeCycle */,
 			);
 			path = Source;
@@ -180,7 +177,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65324DD828F40113006A770E /* ViewController.swift in Sources */,
 				65324DD428F40113006A770E /* AppDelegate.swift in Sources */,
 				65324DD628F40113006A770E /* SceneDelegate.swift in Sources */,
 			);
