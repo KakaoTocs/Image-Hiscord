@@ -17,6 +17,7 @@
 		659D95BA28F529BC000030EA /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 659D95B928F529BC000030EA /* RxCocoa */; };
 		659D95BC28F529BC000030EA /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 659D95BB28F529BC000030EA /* RxRelay */; };
 		659D95BE28F529BC000030EA /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 659D95BD28F529BC000030EA /* RxSwift */; };
+		659D95C828F532D6000030EA /* ImageMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659D95C728F532D6000030EA /* ImageMeta.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		65324DDF28F40115006A770E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65324DE128F40115006A770E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		659D95B028F5292E000030EA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		659D95C728F532D6000030EA /* ImageMeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMeta.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		65324DE828F403E0006A770E /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				659D95C628F532CA000030EA /* Model */,
 				65324DE928F40418006A770E /* LifeCycle */,
 				65324DEB28F40536006A770E /* Home */,
 			);
@@ -104,6 +107,14 @@
 				659D95B028F5292E000030EA /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		659D95C628F532CA000030EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				659D95C728F532D6000030EA /* ImageMeta.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +202,7 @@
 				65324DD428F40113006A770E /* AppDelegate.swift in Sources */,
 				65324DD628F40113006A770E /* SceneDelegate.swift in Sources */,
 				659D95B128F5292E000030EA /* HomeViewController.swift in Sources */,
+				659D95C828F532D6000030EA /* ImageMeta.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
