@@ -12,6 +12,11 @@
 		65324DD828F40113006A770E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65324DD728F40113006A770E /* ViewController.swift */; };
 		65324DDD28F40115006A770E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65324DDC28F40115006A770E /* Assets.xcassets */; };
 		65324DE028F40115006A770E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65324DDE28F40115006A770E /* LaunchScreen.storyboard */; };
+		659D95B428F5295D000030EA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 659D95B328F5295D000030EA /* SnapKit */; };
+		659D95B728F52987000030EA /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 659D95B628F52987000030EA /* Then */; };
+		659D95BA28F529BC000030EA /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 659D95B928F529BC000030EA /* RxCocoa */; };
+		659D95BC28F529BC000030EA /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 659D95BB28F529BC000030EA /* RxRelay */; };
+		659D95BE28F529BC000030EA /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 659D95BD28F529BC000030EA /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				659D95BA28F529BC000030EA /* RxCocoa in Frameworks */,
+				659D95B428F5295D000030EA /* SnapKit in Frameworks */,
+				659D95BE28F529BC000030EA /* RxSwift in Frameworks */,
+				659D95BC28F529BC000030EA /* RxRelay in Frameworks */,
+				659D95B728F52987000030EA /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +114,13 @@
 			dependencies = (
 			);
 			name = "Image Hiscord";
+			packageProductDependencies = (
+				659D95B328F5295D000030EA /* SnapKit */,
+				659D95B628F52987000030EA /* Then */,
+				659D95B928F529BC000030EA /* RxCocoa */,
+				659D95BB28F529BC000030EA /* RxRelay */,
+				659D95BD28F529BC000030EA /* RxSwift */,
+			);
 			productName = "Image Hiscord";
 			productReference = 65324DD028F40113006A770E /* Image Hiscord.app */;
 			productType = "com.apple.product-type.application";
@@ -132,6 +149,11 @@
 				Base,
 			);
 			mainGroup = 65324DC728F40113006A770E;
+			packageReferences = (
+				659D95B228F5295D000030EA /* XCRemoteSwiftPackageReference "SnapKit" */,
+				659D95B528F52987000030EA /* XCRemoteSwiftPackageReference "Then" */,
+				659D95B828F529BC000030EA /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 65324DD128F40113006A770E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -370,6 +392,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		659D95B228F5295D000030EA /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		659D95B528F52987000030EA /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		659D95B828F529BC000030EA /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		659D95B328F5295D000030EA /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 659D95B228F5295D000030EA /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		659D95B628F52987000030EA /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 659D95B528F52987000030EA /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		659D95B928F529BC000030EA /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 659D95B828F529BC000030EA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		659D95BB28F529BC000030EA /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 659D95B828F529BC000030EA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		659D95BD28F529BC000030EA /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 659D95B828F529BC000030EA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 65324DC828F40113006A770E /* Project object */;
 }
