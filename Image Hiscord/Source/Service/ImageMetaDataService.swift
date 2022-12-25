@@ -9,11 +9,12 @@ import Foundation
 import ImageIO
 
 protocol ImageMetaDataServiceProtocol {
-    func getEXIFDictionary(image data: Data) -> [String: Any]
+    func readEXIFDictionary(image data: Data) -> [String: Any]
+    func writeEXIFDictionary(image data: Data, exif dictionary: [String: Any])
 }
 
 final class ImageMetaDataService: ImageMetaDataServiceProtocol {
-    func getEXIFDictionary(image data: Data) -> [String: Any] {
+    func readEXIFDictionary(image data: Data) -> [String: Any] {
         var result: [String: Any] = [:]
         if let cgImageSource = CGImageSourceCreateWithData(data as CFData, nil),
            let properties = CGImageSourceCopyPropertiesAtIndex(cgImageSource, 0, nil) as? [String: Any],
@@ -23,5 +24,9 @@ final class ImageMetaDataService: ImageMetaDataServiceProtocol {
             dump(dictionary)
         }
         return result
+    }
+    
+    func writeEXIFDictionary(image data: Data, exif dictionary: [String: Any]) {
+        
     }
 }

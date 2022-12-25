@@ -28,7 +28,7 @@ final class ImageWorker: ImageWorkerProtocol {
     }
     
     func extractImageMeta(image data: Data) -> Observable<ImageMeta?> {
-        return Observable.just(imageMetaDataService.getEXIFDictionary(image: data))
+        return Observable.just(imageMetaDataService.readEXIFDictionary(image: data))
             .map(imageMetaGenerate(_:))
     }
 }
