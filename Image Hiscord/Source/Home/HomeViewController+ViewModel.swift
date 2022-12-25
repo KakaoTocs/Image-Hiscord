@@ -1,8 +1,8 @@
 //
-//  HomeViewModel.swift
+//  HomeViewController+ViewModel.swift
 //  Image Hiscord
 //
-//  Created by 김진우 on 2022/10/11.
+//  Created by 김진우 on 2022/12/25.
 //
 
 import UIKit
@@ -10,44 +10,7 @@ import UIKit
 import RxSwift
 import RxRelay
 
-protocol HomeViewModelInput {
-    var selectImageButtonTap: PublishRelay<Void> { get }
-    var detailButtonTap: PublishRelay<Void> { get }
-}
-
-protocol HomeViewModelState {
-    var image: BehaviorSubject<UIImage?> { get }
-}
-
-protocol HomeViewModelOutput {
-    var selectedImage: Observable<UIImage?> { get }
-    var isActiveDetailButton: Observable<Bool> { get }
-    var imageName: Observable<String?> { get }
-    var imageDate: Observable<String?> { get }
-}
-
-final class HomeViewModel: ViewModelProtocol {
-    // MARK: - Property
-    let dependency: Dependency
-    let payload: Payload
-    let disposeBag: DisposeBag = .init()
-    
-    let input: Input = .init()
-    let state: State
-    let output: Output
-    
-    // MARK: - Init
-    init(dependency: Dependency, payload: Payload) {
-        self.dependency = dependency
-        self.payload = payload
-        
-        self.state = .init(input: input, dependency: dependency)
-        self.output = .init(state: state)
-    }
-}
-
-extension HomeViewModel {
-    // MARK: - Declaration
+extension HomeViewController {
     struct Dependency {
         var imageWorker: ImageWorkerProtocol
     }
@@ -55,16 +18,12 @@ extension HomeViewModel {
     struct Payload {
     }
     
-    struct Input: HomeViewModelInput {
+    struct Input {
         let selectImageButtonTap: PublishRelay<Void> = .init()
         let detailButtonTap: PublishRelay<Void> = .init()
-        
-        init() {
-            
-        }
     }
     
-    struct State: HomeViewModelState {
+    struct State {
         let image: BehaviorSubject<UIImage?> = .init(value: nil)
         let imageMeta: BehaviorSubject<ImageMeta?> = .init(value: nil)
         
@@ -86,17 +45,39 @@ extension HomeViewModel {
         }
     }
     
-    struct Output: HomeViewModelOutput {
+    struct Output {
         let selectedImage: Observable<UIImage?>
         let isActiveDetailButton: Observable<Bool>
         let imageName: Observable<String?>
         let imageDate: Observable<String?>
         
-        init(state: HomeViewModelState) {
+        init(state: State) {
             self.selectedImage = state.image
             self.isActiveDetailButton = state.image.map { $0 != nil }
             
             self.imageName = state.image.map
+        }
+    }
+}
+
+extension HomeViewController {
+    final class ViewModel {
+        // MARK: - Property
+        let dependency: Dependency
+        let payload: Payload
+        let disposeBag: DisposeBag = .init()
+        
+        let input: Input = .init()
+        let state: State
+        let output: Output
+        
+        // MARK: - Init
+        init(dependency: Dependency, payload: Payload) {
+            self.dependency = dependency
+            self.payload = payload
+            
+            self.state = .init(input: input, dependency: dependency)
+            self.output = .init(state: state)
         }
     }
 }
