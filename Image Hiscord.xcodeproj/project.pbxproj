@@ -96,7 +96,6 @@
 				659D95C628F532CA000030EA /* Model */,
 				659D95C328F53157000030EA /* Service */,
 				65324DE928F40418006A770E /* LifeCycle */,
-				BAE400FA29584BE600921503 /* Root */,
 				65324DEB28F40536006A770E /* Home */,
 				BAE400F729584BD500921503 /* Detail */,
 			);
@@ -145,14 +144,6 @@
 			);
 			path = Detail;
 			sourceTree = "<group>";
-		};
-		BAE400FA29584BE600921503 /* Root */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Root;
-			path = "Image Hiscord/Source/Root";
-			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
