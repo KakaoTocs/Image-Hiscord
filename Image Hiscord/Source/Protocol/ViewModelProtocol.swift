@@ -10,6 +10,7 @@ import RxSwift
 protocol ViewModelProtocol {
     associatedtype Dependency
     associatedtype Payload
+    
     associatedtype Input
     associatedtype State
     associatedtype Output

@@ -95,6 +95,7 @@
 		65324DE828F403E0006A770E /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				BAE40102295853A000921503 /* Protocol */,
 				659D95C628F532CA000030EA /* Model */,
 				659D95C328F53157000030EA /* Service */,
 				65324DE928F40418006A770E /* LifeCycle */,
@@ -143,9 +144,16 @@
 		BAE400F729584BD500921503 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				BAE400F829584BD500921503 /* ViewModelProtocol.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		BAE40102295853A000921503 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				BAE400F829584BD500921503 /* ViewModelProtocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
