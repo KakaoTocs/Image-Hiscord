@@ -7,23 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6525362728F54913004C9DED /* ImageMetaDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6525362628F54913004C9DED /* ImageMetaDataService.swift */; };
 		65324DD428F40113006A770E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65324DD328F40113006A770E /* AppDelegate.swift */; };
 		65324DD628F40113006A770E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65324DD528F40113006A770E /* SceneDelegate.swift */; };
-		65324DD828F40113006A770E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65324DD728F40113006A770E /* ViewController.swift */; };
-		65324DDB28F40113006A770E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65324DD928F40113006A770E /* Main.storyboard */; };
 		65324DDD28F40115006A770E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65324DDC28F40115006A770E /* Assets.xcassets */; };
 		65324DE028F40115006A770E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65324DDE28F40115006A770E /* LaunchScreen.storyboard */; };
+		659D95B128F5292E000030EA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659D95B028F5292E000030EA /* HomeViewController.swift */; };
+		659D95B428F5295D000030EA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 659D95B328F5295D000030EA /* SnapKit */; };
+		659D95B728F52987000030EA /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 659D95B628F52987000030EA /* Then */; };
+		659D95BA28F529BC000030EA /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 659D95B928F529BC000030EA /* RxCocoa */; };
+		659D95BC28F529BC000030EA /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 659D95BB28F529BC000030EA /* RxRelay */; };
+		659D95BE28F529BC000030EA /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 659D95BD28F529BC000030EA /* RxSwift */; };
+		659D95C028F529F1000030EA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659D95BF28F529F1000030EA /* HomeViewModel.swift */; };
+		659D95C528F5317B000030EA /* ImageWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659D95C428F5317B000030EA /* ImageWorker.swift */; };
+		659D95C828F532D6000030EA /* ImageMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659D95C728F532D6000030EA /* ImageMeta.swift */; };
+		BAE400F929584BD500921503 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE400F829584BD500921503 /* ViewModelProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6525362628F54913004C9DED /* ImageMetaDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMetaDataService.swift; sourceTree = "<group>"; };
 		65324DD028F40113006A770E /* Image Hiscord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Image Hiscord.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65324DD328F40113006A770E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65324DD528F40113006A770E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		65324DD728F40113006A770E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		65324DDA28F40113006A770E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65324DDC28F40115006A770E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65324DDF28F40115006A770E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65324DE128F40115006A770E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		659D95B028F5292E000030EA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		659D95BF28F529F1000030EA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		659D95C428F5317B000030EA /* ImageWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWorker.swift; sourceTree = "<group>"; };
+		659D95C728F532D6000030EA /* ImageMeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMeta.swift; sourceTree = "<group>"; };
+		BAE400F829584BD500921503 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +44,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				659D95BA28F529BC000030EA /* RxCocoa in Frameworks */,
+				659D95B428F5295D000030EA /* SnapKit in Frameworks */,
+				659D95BE28F529BC000030EA /* RxSwift in Frameworks */,
+				659D95BC28F529BC000030EA /* RxRelay in Frameworks */,
+				659D95B728F52987000030EA /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,16 +74,85 @@
 		65324DD228F40113006A770E /* Image Hiscord */ = {
 			isa = PBXGroup;
 			children = (
-				65324DD328F40113006A770E /* AppDelegate.swift */,
-				65324DD528F40113006A770E /* SceneDelegate.swift */,
-				65324DD728F40113006A770E /* ViewController.swift */,
-				65324DD928F40113006A770E /* Main.storyboard */,
+				65324DE728F403DC006A770E /* Resource */,
+				65324DE828F403E0006A770E /* Source */,
+			);
+			path = "Image Hiscord";
+			sourceTree = "<group>";
+		};
+		65324DE728F403DC006A770E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
 				65324DDC28F40115006A770E /* Assets.xcassets */,
 				65324DDE28F40115006A770E /* LaunchScreen.storyboard */,
 				65324DE128F40115006A770E /* Info.plist */,
 			);
-			path = "Image Hiscord";
+			path = Resource;
 			sourceTree = "<group>";
+		};
+		65324DE828F403E0006A770E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				659D95C628F532CA000030EA /* Model */,
+				659D95C328F53157000030EA /* Service */,
+				65324DE928F40418006A770E /* LifeCycle */,
+				BAE400FA29584BE600921503 /* Root */,
+				65324DEB28F40536006A770E /* Home */,
+				BAE400F729584BD500921503 /* Detail */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		65324DE928F40418006A770E /* LifeCycle */ = {
+			isa = PBXGroup;
+			children = (
+				65324DD328F40113006A770E /* AppDelegate.swift */,
+				65324DD528F40113006A770E /* SceneDelegate.swift */,
+			);
+			path = LifeCycle;
+			sourceTree = "<group>";
+		};
+		65324DEB28F40536006A770E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				659D95B028F5292E000030EA /* HomeViewController.swift */,
+				659D95BF28F529F1000030EA /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		659D95C328F53157000030EA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				659D95C428F5317B000030EA /* ImageWorker.swift */,
+				6525362628F54913004C9DED /* ImageMetaDataService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		659D95C628F532CA000030EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				659D95C728F532D6000030EA /* ImageMeta.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BAE400F729584BD500921503 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				BAE400F829584BD500921503 /* ViewModelProtocol.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		BAE400FA29584BE600921503 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Root;
+			path = "Image Hiscord/Source/Root";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -83,6 +170,13 @@
 			dependencies = (
 			);
 			name = "Image Hiscord";
+			packageProductDependencies = (
+				659D95B328F5295D000030EA /* SnapKit */,
+				659D95B628F52987000030EA /* Then */,
+				659D95B928F529BC000030EA /* RxCocoa */,
+				659D95BB28F529BC000030EA /* RxRelay */,
+				659D95BD28F529BC000030EA /* RxSwift */,
+			);
 			productName = "Image Hiscord";
 			productReference = 65324DD028F40113006A770E /* Image Hiscord.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +205,11 @@
 				Base,
 			);
 			mainGroup = 65324DC728F40113006A770E;
+			packageReferences = (
+				659D95B228F5295D000030EA /* XCRemoteSwiftPackageReference "SnapKit" */,
+				659D95B528F52987000030EA /* XCRemoteSwiftPackageReference "Then" */,
+				659D95B828F529BC000030EA /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 65324DD128F40113006A770E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +226,6 @@
 			files = (
 				65324DE028F40115006A770E /* LaunchScreen.storyboard in Resources */,
 				65324DDD28F40115006A770E /* Assets.xcassets in Resources */,
-				65324DDB28F40113006A770E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +236,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65324DD828F40113006A770E /* ViewController.swift in Sources */,
 				65324DD428F40113006A770E /* AppDelegate.swift in Sources */,
+				6525362728F54913004C9DED /* ImageMetaDataService.swift in Sources */,
 				65324DD628F40113006A770E /* SceneDelegate.swift in Sources */,
+				659D95C028F529F1000030EA /* HomeViewModel.swift in Sources */,
+				659D95B128F5292E000030EA /* HomeViewController.swift in Sources */,
+				659D95C528F5317B000030EA /* ImageWorker.swift in Sources */,
+				659D95C828F532D6000030EA /* ImageMeta.swift in Sources */,
+				BAE400F929584BD500921503 /* ViewModelProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		65324DD928F40113006A770E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				65324DDA28F40113006A770E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		65324DDE28F40115006A770E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +311,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +365,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -289,12 +384,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P7PUGAUP8K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Image Hiscord/Info.plist";
+				INFOPLIST_FILE = "Image Hiscord/Resource/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,12 +412,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P7PUGAUP8K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Image Hiscord/Info.plist";
+				INFOPLIST_FILE = "Image Hiscord/Resource/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,6 +453,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		659D95B228F5295D000030EA /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		659D95B528F52987000030EA /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		659D95B828F529BC000030EA /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		659D95B328F5295D000030EA /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 659D95B228F5295D000030EA /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		659D95B628F52987000030EA /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 659D95B528F52987000030EA /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		659D95B928F529BC000030EA /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 659D95B828F529BC000030EA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		659D95BB28F529BC000030EA /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 659D95B828F529BC000030EA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		659D95BD28F529BC000030EA /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 659D95B828F529BC000030EA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 65324DC828F40113006A770E /* Project object */;
 }
